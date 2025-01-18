@@ -1,5 +1,5 @@
-print("začátek lekce")
+import module
+      
+print("Muž",module.muz)
+print("Žena",module.zena)
 
-list1 = {"one":1}
-
-print("Zdravím!")

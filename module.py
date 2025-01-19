@@ -1,9 +1,19 @@
-# Příprava na první modul
-jmenoM = "Johny"
-jmenoZ = "Marie"
-vekM = 32
-vekZ = 25
-pohlaviM = "Muž"
-pohlaviZ = "Žena"
-muz = jmenoM + str(vekM) + pohlaviM
-zena = jmenoZ + str(vekZ) + pohlaviZ
+import re  
+
+name = ""
+name2 = ""
+email = ""
+podekovani = "Děkuji za vaší pozornost"
+max_pokusy = 3
+pokusy = 0
+is_registered = False 
+
+email_pattern = r"^[a-zA-Z0-9_.+-]+@[a-zA-Z0-9-]+\.[a-zA-Z0-9-.]+$"  # Regulární výraz
+
+def ukonceni(vyzva):
+    """ukočení programu pomocí 'exit'."""
+    vstup = input(vyzva)
+    if vstup.lower() == "exit":
+        print("Program byl ukončen na žádost uživatele. Děkujeme.")
+        exit()
+    return vstup

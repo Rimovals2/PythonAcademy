@@ -39,7 +39,7 @@ uzivatele = {
     "ann": "pass123",
     "mike": "password123",
     "liz": "pass123",
-    "slavek": "slavek" # Moje testovani
+    "s": "s" # Moje testovani
 }
 
 def prihlaseni():
@@ -96,10 +96,10 @@ def analyzuj_text(text):
         delky_slov[delka] = delky_slov.get(delka, 0) + 1
         
     print("-" * 40)
-    print("LEN| OCCURENCES  |NR.")
+    print(f"{'LEN':<3} | {'OCCURRENCES':<17} | {'NR':<3}")
     print("-" * 40)
     for delka, cetnost in sorted(delky_slov.items()):
-        print(f"{delka:<3}| {'*' * cetnost:<11} |{cetnost}")
+        print(f"{delka:<3} | {'*' * cetnost:<17} | {cetnost:<2}")
 
 # Možnost opakování pro lepší testování
 def hlavni_program():
